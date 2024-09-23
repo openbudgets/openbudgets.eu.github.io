@@ -24,3 +24,31 @@
     "colorbox",
     "docs"
 ;
+
+
+.deprecation-banner {
+    padding: 10px 30px;
+}
+
+.deprecation-banner__content {
+    border: 2px solid $medium-green;
+    padding: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.deprecation-banner__content:before {
+    content: "!";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -15px;
+    color: white;
+    background-color: $medium-green;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
